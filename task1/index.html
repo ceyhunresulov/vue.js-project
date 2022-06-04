@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/vue@3"></script>
+  </head>
+  <body>
+    <div id="app">
+      <div class="card">
+        <input type="checkbox" class="check" id="red" /><br />
+        <label for="red">Red</label>
+      </div>
+      <div class="card">
+        <input type="checkbox" class="check" /><br />
+        <label for="red">orange</label>
+      </div>
+      <div class="card">
+        <input type="checkbox" class="check" /><br />
+        <label for="red">blue</label>
+      </div>
+      <div class="card">
+        <input type="checkbox" class="check" /><br />
+        <label for="red">black </label>
+      </div>
+    </div>
+    <div class="textarea">
+      <textarea
+        name="text"
+        id="textarea"
+        cols="30"
+        rows="10"
+        :placeholder="{dk}"
+      ></textarea>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
