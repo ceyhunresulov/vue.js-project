@@ -8,7 +8,11 @@ body {
 }
 #app {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.checks {
+  display: flex;
 }
 .textarea {
   display: flex;
@@ -22,4 +26,13 @@ body {
 }
 .red {
   background-color: red;
+}
+.blue {
+  background-color: blue;
+}
+.green {
+  background-color: green;
+}
+.orange {
+  background-color: orange;
 }

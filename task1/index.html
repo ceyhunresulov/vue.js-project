@@ -10,33 +10,50 @@
   </head>
   <body>
     <div id="app">
-      <div class="card">
-        <input type="checkbox" class="check" id="red" /><br />
-        <label for="red">Red</label>
+      <div class="checks">
+        <div class="card">
+          <input
+            type="checkbox"
+            v-on:click="redColor=!redColor"
+            class="check"
+          /><br />
+          <label for="red">Red</label>
+        </div>
+        <div class="card">
+          <input
+            type="checkbox"
+            v-on:click="blueColor=!blueColor"
+            class="check"
+          /><br />
+          <label for="red">blue</label>
+        </div>
+        <div class="card">
+          <input
+            type="checkbox"
+            v-on:click="greenColor=!greenColor"
+            class="check"
+          /><br />
+          <label for="red">green</label>
+        </div>
+        <div class="card">
+          <input
+            type="checkbox"
+            v-on:click="orangeColor=!orangeColor"
+            class="check"
+          /><br />
+          <label for="red">black </label>
+        </div>
       </div>
-      <div class="card">
-        <input type="checkbox" class="check" /><br />
-        <label for="red">orange</label>
-      </div>
-      <div class="card">
-        <input type="checkbox" class="check" /><br />
-        <label for="red">blue</label>
-      </div>
-      <div class="card">
-        <input type="checkbox" class="check" /><br />
-        <label for="red">black </label>
+      <div class="textarea">
+        <textarea
+          name="text"
+          id="textarea"
+          :class="{red: !redColor , blue : !blueColor,green:!greenColor, orange: !orangeColor}"
+          cols="30"
+          rows="10"
+        ></textarea>
       </div>
     </div>
-    <div class="textarea">
-      <textarea
-        name="text"
-        id="textarea"
-        cols="30"
-        rows="10"
-        :placeholder="{dk}"
-      ></textarea>
-    </div>
-
     <script src="app.js"></script>
   </body>
 </html>

@@ -1,7 +1,15 @@
 const app = Vue.createApp({
   data() {
     return {
-      dk: "salam necesen",
+      redColor: true,
+      blueColor: true,
+      orangeColor: true,
+      greenColor: true,
     };
+  },
+  methods: {
+    changeRed() {
+      return (this.redColor.redTrue = !redTrue);
+    },
   },
 }).mount("#app");
